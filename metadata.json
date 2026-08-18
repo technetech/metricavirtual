@@ -1,0 +1,6 @@
+{
+  "name": "Métrica Virtual | Tours Virtuales 360° & Captura 3D",
+  "description": "Plataforma y servicios profesionales de tours virtuales 360°, levantamiento 3D y digitalización espacial para inmobiliarias, arquitectura e industria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

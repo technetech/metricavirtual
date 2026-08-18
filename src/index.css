@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #101E1A;
+    background-color: #F9F8F4;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Palette 3: Architectural Emerald Pine & Warm Gold */
+.bg-theme-pine {
+  background-color: #0B221E;
+}
+
+.bg-theme-pine-card {
+  background-color: #12312B;
+}
+
+.bg-theme-light {
+  background-color: #F9F8F4;
+}
+
+.bg-theme-section {
+  background-color: #F0EFE8;
+}
+
+.text-gold-accent {
+  color: #CFA760;
+}
+
+.bg-gold-accent {
+  background-color: #CFA760;
+}
+
+.border-theme-gold {
+  border-color: rgba(207, 167, 96, 0.4);
+}
+
+.border-theme-emerald {
+  border-color: #1D453C;
+}
+
+.border-theme-light {
+  border-color: #E2E0D5;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #EFECE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #A3B5AE;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6D827B;
+}
+

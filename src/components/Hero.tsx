@@ -77,12 +77,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
 
           {/* Right Visual Showcase */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-sm overflow-hidden border border-[#E2E0D5] bg-[#F9F8F4] shadow-2xl group">
+            <a 
+              href="https://storage.net-fs.com/hosting/8404654/4/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block relative rounded-sm overflow-hidden border border-[#E2E0D5] bg-[#F9F8F4] shadow-2xl group cursor-pointer"
+            >
               
               {/* Hero Image */}
               <img
-                src="/src/assets/images/hero_virtual_tour_1785266687993.jpg"
-                alt="Interior de Tour Virtual 360°"
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
+                alt="Mikeno Tour Virtual 360°"
                 className="w-full h-[380px] sm:h-[420px] object-cover filter brightness-[0.95] group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
@@ -93,24 +98,22 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
               {/* Floating Spatial Measurement Tag */}
               <div className="absolute top-4 left-4 bg-[#0B221E]/90 backdrop-blur-md px-3.5 py-2 rounded-sm border border-[#163931] text-xs text-white flex items-center gap-2 shadow-lg">
                 <div className="w-2 h-2 rounded-full bg-[#CFA760] animate-ping" />
-                <span className="font-mono text-[11px] text-[#CFA760] uppercase tracking-wider font-semibold">PUNTO DE ESCANEO 3D #04</span>
-                <span className="text-[#1E4A3E]">|</span>
-                <span className="text-[#D8E6E2]">Escala 1:1</span>
+                <span className="font-mono text-[11px] text-[#CFA760] uppercase tracking-wider font-semibold">VER DEMO INTERACTIVO</span>
               </div>
 
               {/* Bottom Card Detail */}
               <div className="absolute bottom-4 left-4 right-4 bg-[#0B221E]/95 backdrop-blur-md p-4 rounded-sm border border-[#1F4B3F] text-white shadow-xl space-y-2">
                 <div className="flex justify-between items-center">
-                  <span className="text-[10px] font-sans text-[#CFA760] uppercase tracking-widest font-semibold">Recorrido Virtual 360°</span>
-                  <span className="bg-[#12312B] text-[10px] text-[#D8E6E2] px-2 py-0.5 rounded border border-[#1F4B3F] font-mono">HDR 8K</span>
+                  <span className="text-[10px] font-sans text-[#CFA760] uppercase tracking-widest font-semibold">Inmobiliario Residencial</span>
+                  <span className="bg-[#12312B] text-[10px] text-[#D8E6E2] px-2 py-0.5 rounded border border-[#1F4B3F] font-mono">Monterrey, N.L.</span>
                 </div>
-                <h3 className="font-serif text-lg font-medium text-white">Residencia & Complejo Arquitectónico</h3>
+                <h3 className="font-serif text-lg font-medium text-white">Mikeno</h3>
                 <p className="text-xs text-[#8FAEA5] leading-relaxed">
-                  Experiencia fluida con medición de muros en tiempo real, mapas de planta y etiquetas interactivas.
+                  Modo Dollhouse 3D • Herramienta de Medición • Hotspots de Acabados Premium
                 </p>
               </div>
 
-            </div>
+            </a>
           </div>
 
         </div>

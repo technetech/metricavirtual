@@ -30,34 +30,8 @@ export const Footer: React.FC = () => {
             </p>
           </div>
 
-          {/* Quick Nav Links */}
-          <div className="space-y-3">
-            <h4 className="font-serif text-xs font-semibold text-[#CFA760] tracking-widest uppercase">
-              Navegación
-            </h4>
-            <ul className="space-y-2 text-[#D8E6E2]">
-              <li><a href="#servicios" className="hover:text-[#CFA760] transition-colors">Servicios Técnicos</a></li>
-              <li><a href="#sectores" className="hover:text-[#CFA760] transition-colors">Sectores Atendidos</a></li>
-              <li><a href="#demos" className="hover:text-[#CFA760] transition-colors">Showroom 360° (Próximamente)</a></li>
-              <li><a href="#metodologia" className="hover:text-[#CFA760] transition-colors">Metodología de Trabajo</a></li>
-              <li><a href="#contacto" className="hover:text-[#CFA760] transition-colors">Contacto Directo</a></li>
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div className="space-y-3">
-            <h4 className="font-serif text-xs font-semibold text-[#CFA760] tracking-widest uppercase">
-              Especialidades
-            </h4>
-            <ul className="space-y-2 text-[#D8E6E2]">
-              <li>Tours Virtuales 360° HDR</li>
-              <li>Escaneo Láser 3D & BIM</li>
-              <li>Staging Virtual 3D</li>
-              <li>Fotografía Aérea Dron 360°</li>
-              <li>Google Street View Trusted</li>
-              <li>Gemelos Digitales Industriales</li>
-            </ul>
-          </div>
+          {/* Empty spacer to keep Contacto on the right */}
+          <div className="hidden lg:block lg:col-span-2"></div>
 
           {/* Contact Summary */}
           <div className="space-y-3">

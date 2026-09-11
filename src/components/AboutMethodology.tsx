@@ -44,7 +44,7 @@ export const AboutMethodology: React.FC<AboutMethodologyProps> = () => {
               02
             </div>
             <h3 className="font-serif text-xl font-semibold text-[#0B221E]">
-              Precisión Métrica & Escala Real
+              Precisión Duplica & Escala Real
             </h3>
             <p className="text-slate-600 text-sm leading-relaxed">
               Cada escaneo integra datos métricos que permiten a compradores, arquitectos e ingenieros realizar mediciones confiables directamente desde la pantalla.

@@ -40,7 +40,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject, 
   };
 
   const whatsappMessage = encodeURIComponent(
-    `Hola Métrica Virtual, me gustaría solicitar información y cotización para un tour virtual 360°. Mi nombre es ${formData.name || 'Cliente'} (${formData.company || 'Empresa'}).`
+    `Hola Duplica Digital, me gustaría solicitar información y cotización para un tour virtual 360°. Mi nombre es ${formData.name || 'Cliente'} (${formData.company || 'Empresa'}).`
   );
 
   return (

@@ -138,7 +138,7 @@ export const DemosSection: React.FC<DemosSectionProps> = ({ onOpenContact }) => 
             {/* Top Viewer Control Bar */}
             <div className="bg-[#0B221E] px-4 py-3 border-b border-[#163931] flex flex-wrap justify-between items-center gap-4 text-xs">
               <div className="flex items-center gap-3">
-                <span className="font-serif font-semibold text-white tracking-wide">MÉTRICA 360° VIEWER</span>
+                <span className="font-serif font-semibold text-white tracking-wide">DUPLICA 360° VIEWER</span>
                 <span className="text-[#1E4A3E]">|</span>
                 <span className="text-[#CFA760] font-mono text-[11px]">DEMO RESIDENCIAL - PLANTA {activeFloor}</span>
               </div>
@@ -178,7 +178,7 @@ export const DemosSection: React.FC<DemosSectionProps> = ({ onOpenContact }) => 
                   }`}
                 >
                   <Ruler className="w-3 h-3" />
-                  <span>Regla Métrica</span>
+                  <span>Regla Duplica</span>
                 </button>
               </div>
             </div>

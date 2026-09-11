@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-2">
               <span className="font-serif text-xl font-normal text-white tracking-widest uppercase">
-                MÉTRICA <span className="font-light text-[#CFA760]">VIRTUAL</span>
+                DUPLICA <span className="font-light text-[#CFA760]">DIGITAL</span>
               </span>
             </div>
 
@@ -58,7 +58,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#12312B] flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-[#8FAEA5]">
-          <p>© {new Date().getFullYear()} Métrica Virtual. Todos los derechos reservados. Captura Espacial & Tours Virtuales 360°.</p>
+          <p>© {new Date().getFullYear()} Duplica Digital. Todos los derechos reservados. Captura Espacial & Tours Virtuales 360°.</p>
           <div className="flex items-center gap-6">
             <span className="hover:text-[#CFA760] cursor-pointer">Aviso de Privacidad</span>
             <span className="hover:text-[#CFA760] cursor-pointer">Términos del Servicio</span>

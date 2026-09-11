@@ -77,7 +77,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
             </div>
             <div>
               <span className="font-serif text-xl sm:text-2xl font-semibold tracking-tight text-[#0B221E] block leading-none">
-                MÉTRICA <span className="font-light italic text-[#CFA760]">VIRTUAL</span>
+                DUPLICA <span className="font-light italic text-[#CFA760]">DIGITAL</span>
               </span>
               <span className="text-[9px] tracking-[0.2em] uppercase text-[#4F635D] block mt-0.5 font-semibold">
                 Tours Virtuales 360° & Captura 3D

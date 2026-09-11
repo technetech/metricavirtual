@@ -1,13 +1,13 @@
 import { ServiceItem, IndustrySector, DemoTour, MethodologyStep, FAQItem } from '../types';
 
 export const COMPANY_INFO = {
-  name: 'Métrica Virtual',
+  name: 'Duplica Digital',
   tagline: 'Tours Virtuales 360° & Captura Espacial de Alta Precisión',
   slogan: 'Transformamos espacios físicos en experiencias digitales inmersivas y medibles.',
   phone: '+52 (811) 618-7697',
   phoneClean: '528116187697',
   whatsapp: '+52 (811) 618-7697',
-  email: 'contacto@metricavirtual.mx',
+  email: 'contacto@duplicadigital.mx',
   address: 'Av. Paseo de la Reforma 483, Cuauhtémoc, Ciudad de México',
   coverage: 'Cobertura en la República Mexicana',
   stats: [

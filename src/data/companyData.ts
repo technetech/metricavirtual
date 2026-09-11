@@ -8,7 +8,7 @@ export const COMPANY_INFO = {
   phoneClean: '528116187697',
   whatsapp: '+52 (811) 618-7697',
   email: 'contacto@duplicadigital.mx',
-  address: 'Av. Paseo de la Reforma 483, Cuauhtémoc, Ciudad de México',
+  address: 'Venustiano Carranza Nte. #500, Plaza Comercial Carranza , Monterrey Nuevo Leon',
   coverage: 'Cobertura en la República Mexicana',
   stats: [
     { value: '+80,000 m²', label: 'Espacios Capturados' },
@@ -32,34 +32,6 @@ export const SERVICES: ServiceItem[] = [
       'Integración directa en sitio web sin plugins'
     ],
     deliverables: ['Enlace web autohospedado', 'Código para embeber iFrame', 'Galería de fotos 4K extraídas del tour']
-  },
-  {
-    id: 'escaneo-3d',
-    title: 'Escaneo Láser 3D & Nubes de Puntos',
-    shortDesc: 'Levantamiento dimensional de precisión milimétrica para proyectos de arquitectura, ingeniería y remodelación (BIM / CAD).',
-    fullDesc: 'Mediante tecnología LiDAR de grado industrial, generamos nubes de puntos georreferenciadas y modelos tridimensionales para proyectos de arquitectura e ingeniería. Reduzca errores en obra y optimice tiempos de diseño.',
-    iconName: 'Box',
-    features: [
-      'Nubes de puntos en formatos .XYZ, .E57, .LAS',
-      'Archivos compatibles con Revit, AutoCAD y ArchiCAD',
-      'Planos de planta 2D y cortes arquitectónicos',
-      'Precisión métrica probada hasta +/- 2mm'
-    ],
-    deliverables: ['Archivo de nube de puntos comprimido', 'Planos 2D esquemáticos', 'Modelo de masa 3D']
-  },
-  {
-    id: 'staging-virtual',
-    title: 'Staging Virtual & Modelado 3D',
-    shortDesc: 'Amueblamiento y decoración digital para inmuebles deshabitados o proyectos en preventa comercial.',
-    fullDesc: 'Transformamos espacios vacíos o en obra gris en residencias u oficinas completamente amuebladas y decoradas con renderizado fotorrealista. Aumente la atracción de compradores potenciales sin el costo de staging físico.',
-    iconName: 'LayoutGrid',
-    features: [
-      'Catálogo con múltiples estilos arquitectónicos (Moderno, Nórdico, Industrial)',
-      'Renderizado 360° integrado directamente en el tour virtual',
-      'Comparativa dinámica "Antes vs. Después"',
-      'Personalización de texturas, iluminación y materiales'
-    ],
-    deliverables: ['Tours 360° con amueblamiento digital', 'Renders fotográficos HD', 'Videos promocionales del espacio']
   },
   {
     id: 'drone-360',
@@ -88,20 +60,6 @@ export const SERVICES: ServiceItem[] = [
       'Optimización SEO local para búsquedas en mapas'
     ],
     deliverables: ['Integración directa en Google Maps', 'Reporte de visualizaciones mensuales']
-  },
-  {
-    id: 'gemelo-digital',
-    title: 'Gemelos Digitales para la Industria',
-    shortDesc: 'Réplicas digitales interactivas para gestión de activos, auditorías de seguridad y capacitación de personal remoto.',
-    fullDesc: 'Creamos gemelos digitales para plantas industriales, centros de distribución y complejos de infraestructura. Permite la supervisión remota de instalaciones, la identificación de riesgos y el entrenamiento de colaboradores sin desplazamientos.',
-    iconName: 'Cpu',
-    features: [
-      'Etiquetado de manuales de mantenimiento y diagramas en puntos críticos',
-      'Plataforma privada de acceso por niveles para colaboradores',
-      'Auditorías de cumplimiento y seguridad operacional a distancia',
-      'Historial de intervenciones y mantenimiento predictivo'
-    ],
-    deliverables: ['Plataforma privada de gestión espacial', 'Manuales interactivos integrados']
   }
 ];
 
@@ -234,7 +192,7 @@ export const DEMO_TOURS: DemoTour[] = [
   },
   {
     id: 'edificio',
-    title: 'Edificio',
+    title: 'Pixels',
     category: 'Hotelería & Turismo',
     location: 'Monterrey, Nuevo León',
     area: '1,200 m²',

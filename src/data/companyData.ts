@@ -7,7 +7,7 @@ export const COMPANY_INFO = {
   phone: '+52 (811) 618-7697',
   phoneClean: '528116187697',
   whatsapp: '+52 (811) 618-7697',
-  email: 'contacto@duplicadigital.mx',
+  email: 'contacto@duplicadigital.com',
   address: 'Venustiano Carranza Nte. #500, Plaza Comercial Carranza , Monterrey Nuevo Leon',
   coverage: 'Cobertura en la República Mexicana',
   stats: [

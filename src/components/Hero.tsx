@@ -78,7 +78,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           {/* Right Visual Showcase */}
           <div className="lg:col-span-5 relative">
             <a 
-              href="https://storage.net-fs.com/hosting/8404654/4/"
+              href="https://mikeno.duplicadigital.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="block relative rounded-sm overflow-hidden border border-[#E2E0D5] bg-[#F9F8F4] shadow-2xl group cursor-pointer"
@@ -86,7 +86,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
               
               {/* Hero Image */}
               <img
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
+                src="/images/projects/mikeno.png"
                 alt="Mikeno Tour Virtual 360°"
                 className="w-full h-[380px] sm:h-[420px] object-cover filter brightness-[0.95] group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"

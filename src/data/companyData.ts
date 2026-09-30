@@ -160,11 +160,11 @@ export const DEMO_TOURS: DemoTour[] = [
     category: 'Inmobiliario Residencial',
     location: 'Monterrey, Nuevo León',
     area: '650 m²',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80',
+    image: '/images/projects/mikeno.png',
     highlights: ['Modo Dollhouse 3D', 'Herramienta de Medición', 'Hotspots de Acabados Premium'],
     features: ['Captura HDR 8K', 'Plano 2D Interactivo', 'Staging de Iluminación'],
     hotspotsCount: 18,
-    link: 'https://storage.net-fs.com/hosting/8404654/4/'
+    link: 'https://mikeno.duplicadigital.com/'
   },
   {
     id: 'terrenos-cumbres',
@@ -172,11 +172,11 @@ export const DEMO_TOURS: DemoTour[] = [
     category: 'Industria & Manufactura',
     location: 'Monterrey, Nuevo León',
     area: '4,200 m²',
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80',
+    image: '/images/projects/terrenos-cumbres.png',
     highlights: ['Nube de Puntos BIM', 'Etiquetado de Seguridad', 'Zonas de Descarga'],
     features: ['Escaneo LiDAR de alta velocidad', 'Acceso seguro restringido', 'Capas de inventario'],
     hotspotsCount: 32,
-    link: 'https://storage.net-fs.com/hosting/8404654/13/'
+    link: 'https://terrenoscumbres.duplicadigital.com/'
   },
   {
     id: 'el-palmar',
@@ -184,11 +184,11 @@ export const DEMO_TOURS: DemoTour[] = [
     category: 'Comercial & Oficinas',
     location: 'Monterrey, Nuevo León',
     area: '380 m²',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80',
+    image: '/images/projects/el-palmar.png',
     highlights: ['Vínculo con Ficha de Compra', 'Recorrido Guiado Automático', 'Google Street View Integration'],
     features: ['Etiquetas e-commerce integradas', 'Audio ambiental inmersivo', 'Optimización móvil'],
     hotspotsCount: 24,
-    link: 'https://storage.net-fs.com/hosting/8404654/15/'
+    link: 'https://elpalmar.duplicadigital.com/'
   },
   {
     id: 'edificio',

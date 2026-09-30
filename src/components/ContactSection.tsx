@@ -29,14 +29,46 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject, 
 
   const [submitted, setSubmitted] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState('');
+  const [honeypot, setHoneypot] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (loading || honeypot) return;
+    setError('');
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 20000);
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/jorge@duplicadigital.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        signal: controller.signal,
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          Empresa: formData.company,
+          Telefono: formData.phone,
+          Sector: formData.industry,
+          Superficie: formData.estimatedArea,
+          message: formData.message,
+          _subject: 'Nueva solicitud de cotización — Duplica Digital',
+          _template: 'table',
+          _url: window.location.href,
+          _honey: honeypot,
+        }),
+      });
+      const result = await response.json();
+      if (!response.ok || (result.success !== true && result.success !== 'true')) {
+        throw new Error('Form submission failed');
+      }
       setSubmitted(true);
-    }, 1000);
+    } catch {
+      setError('No pudimos confirmar el envío. Intente nuevamente o escríbanos a jorge@duplicadigital.com.');
+    } finally {
+      window.clearTimeout(timeout);
+      setLoading(false);
+    }
   };
 
   const whatsappMessage = encodeURIComponent(
@@ -162,7 +194,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject, 
                   ¡Mensaje Enviado con Éxito!
                 </h3>
                 <p className="text-[#D8E6E2] text-sm max-w-md mx-auto">
-                  Gracias por escribirnos. Un especialista técnico revisará los detalles de su espacio y se comunicará en menos de 4 horas hábiles.
+                  Gracias por escribirnos. Su solicitud fue aceptada para envío. Nuestro equipo se pondrá en contacto con usted.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
@@ -173,6 +205,16 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject, 
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
+                <input
+                  type="text"
+                  name="_honey"
+                  value={honeypot}
+                  onChange={(e) => setHoneypot(e.target.value)}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  style={{ display: 'none' }}
+                />
                 <div className="border-b border-[#1F4B3F] pb-3">
                   <h3 className="font-serif text-xl font-semibold text-white">Formulario de Solicitud & Cotización</h3>
                   <p className="text-xs text-[#8FAEA5]">Complete los datos de su inmueble o proyecto.</p>
@@ -269,6 +311,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject, 
                   />
                 </div>
 
+                {error && <p role="alert" className="text-sm text-red-300">{error}</p>}
                 <button
                   type="submit"
                   disabled={loading}

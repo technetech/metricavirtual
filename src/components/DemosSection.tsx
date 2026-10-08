@@ -71,13 +71,6 @@ export const DemosSection: React.FC<DemosSectionProps> = ({ onOpenContact }) => 
                     Ubicación: {tour.location}
                   </p>
 
-                  <div className="mt-3 flex flex-wrap gap-1.5">
-                    {tour.highlights.map((h, idx) => (
-                      <span key={idx} className="bg-[#061815] text-[#D8E6E2] text-[10px] px-2 py-0.5 rounded-sm border border-[#1F4B3F]">
-                        {h}
-                      </span>
-                    ))}
-                  </div>
                 </div>
 
                 <div className="pt-4 border-t border-[#1F4B3F] flex items-center justify-end">

@@ -193,14 +193,14 @@ export const DEMO_TOURS: DemoTour[] = [
   {
     id: 'edificio',
     title: 'Pixels',
-    category: 'Hotelería & Turismo',
+    category: 'Usos Mixtos',
     location: 'Monterrey, Nuevo León',
     area: '1,200 m²',
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80',
+    image: '/images/projects/pixel.png',
     highlights: ['Vistas Panorámicas 360° Aéreas', 'Reservación Directa de Habitaciones', 'Galería Fotográfica HD'],
     features: ['Captura con Dron 360°', 'Transición Día/Noche', 'Soporte Multilingüe'],
     hotspotsCount: 28,
-    link: 'https://storage.net-fs.com/hosting/8404654/14/'
+    link: 'https://pixel.duplicadigital.com/'
   }
 ];
 

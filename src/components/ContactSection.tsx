@@ -40,7 +40,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject, 
     const controller = new AbortController();
     const timeout = window.setTimeout(() => controller.abort(), 20000);
     try {
-      const response = await fetch('https://formsubmit.co/ajax/jorge@duplicadigital.com', {
+      const response = await fetch('https://formspree.io/f/xgaokgqq', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         signal: controller.signal,
@@ -53,13 +53,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject, 
           Superficie: formData.estimatedArea,
           message: formData.message,
           _subject: 'Nueva solicitud de cotización — Duplica Digital',
-          _template: 'table',
-          _url: window.location.href,
-          _honey: honeypot,
+          pagina: window.location.href,
+          _gotcha: honeypot,
         }),
       });
-      const result = await response.json();
-      if (!response.ok || (result.success !== true && result.success !== 'true')) {
+      if (!response.ok) {
         throw new Error('Form submission failed');
       }
       setSubmitted(true);
@@ -207,7 +205,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialSubject, 
               <form onSubmit={handleSubmit} className="space-y-5">
                 <input
                   type="text"
-                  name="_honey"
+                  name="_gotcha"
                   value={honeypot}
                   onChange={(e) => setHoneypot(e.target.value)}
                   tabIndex={-1}
